@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+        <header>
+            <h1>Analisador de Números</h1>
+        </header> 
+        <section>
+
+            <div>
+                Números (Entre 0 e 100):<input type="number" name="numeros" id="txtv">
+                <input type="button" value="Adicionar" id="button" onclick="adicionar()">
+            </div>
+            <div>
+                <select name="num" id="select" size="10">
+                    <option value="Adicione um valor acima"></option>
+                </select>
+                
+            </div>
+            <div>
+                <input type="button" value="Somar" id="button2" onclick="somar()">
+            </div>
+            <div id="res">
+
+            </div>
+            <p></p>
+            <div>
+                <input type="button" id="limpar" value="Limpar" onclick="limpar()">
+            </div>
+        </section>
+        <footer>
+            <p>&copy;DayvsonBarros</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(50, 196, 6);
+            width: 200px;
+            color: black;
+            font: normal 14px Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <p class="Box"></p>
+    <div id = "msg" onmouseenter="entrou()" onmouseout = "saiu()">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'pink'
+
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'darkgreen'
+        d.style.color = 'lightblue'
+        d.style.fontSize = '24px'
+        d.innerText = 'Estou aguardando...' 
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'darkgreen'
+        d.style.background = 'lightgreen'
+
+        var en = window.document.getElementById('msg')
+        var sa = window.document.getElementById('msg')
+
+        function entrou(){
+        en.style.color = 'white'
+        en.innerText = 'Sai daqui!'
+        en.style.background = 'black'
+        en.style.width = '200px'
+        en.style.height = '200px'
+        en.style.lineHeight = '200px'
+    }
+
+        function saiu(){
+            sa.style.color = 'black'
+            sa.innerText = 'Clique em mim'
+            sa.style.background = 'white'
+            sa.style.width = '200px'
+            sa.style.lineHeight = '150px'
+        }
+
+        window.document.write(window.document.URL)
+        window.document.write(window.document.charset)
+        window.document.write(window.navigator.appName)
+    
+    </script>
+</body>
+</html>

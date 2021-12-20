@@ -1,0 +1,93 @@
+Aula 08 Curso de JavaScript
+
+OPERADORES RELACIONAIS, LÓGICOS E TERNÁRIOS
+
+¹RELACIONAIS
+
+> Maior quê
+< Menor quê
+>= Maior quê igual
+<= Menor quê igual
+== Igual
+!= Diferente
+
+5 > 2 -> True
+7 < 4 -> false
+8 >= 8 -> true
+9 <= 7 -> false
+5 == 5 -> true
+4 != 4 -> false
+
+
+Exemplos
+
+preço >= 2000.50  	//o preço é maior ou igual a 200.50
+idade < 18 	  	//a idade é menor do que 18
+curso == 'JavaScript'	// O curso é igual a 'JavaScript'
+n1 != n2		// n1 é diferengte de n2
+
+Identidade
+
+5 == 5		-> true
+5 == '5'	-> true
+5 ==='5'	-> false	\
+5 === 5		-> true		/  === Idêntico
+
+
+²LÓGICOS
+
+!	-> Negação	-> NÃO
+&&	-> Conjução	-> E
+||	-> Disjunção	-> OU
+
+Negação
+! True  -> false
+! False -> true
+
+Conjução
+true && true	-> true
+true && false	-> false
+false && true	-> false
+false && false	-> true
+
+Disjunção
+true || true	-> true
+true || false	-> true
+false || true	-> true
+false || false	-> false
+
+Ordem de execução
+1 Não	-> !
+2 E	-> &&
+3 Ou	-> ||
+
+Exemplos
+
+idade >= 15 && idade <= 17		//a idade entre 15 e 17?
+estado == 'RJ' || estado =='SP'		// o estado é Rj ou Sp?
+salário > 1500 && sexp !='M'		// o salário é acima de 1500 e o sexo não é M (no caso é uma mulher)?
+
+
+Precedência
+
+() ** / ...	|
+> < >= ...	|
+!		|
+&&		|
+||		V
+
+
+
+
+TERNÁRIO
+
+?
+:
+Tem Três fases
+
+teste ? true : false
+
+Exemplo
+Var Média = 8
+Var R = Média >= 7 ? "Aprovado" : "Reprovado"
+R == 'Aprovado'

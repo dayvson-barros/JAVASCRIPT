@@ -1,0 +1,104 @@
+body{
+    background: rgb(75, 75, 231);
+    font: normal 14pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.335);
+}
+
+#button{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background:rgba(25, 243, 108, 0.363);
+    box-shadow: 0px 5px 5px rgba(25, 26, 25, 0.39)
+
+}
+
+#button2{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background:rgba(25, 243, 108, 0.363);
+    box-shadow: 0px 5px 5px rgba(25, 26, 25, 0.39)
+
+}
+
+#limpar{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background:rgba(25, 243, 108, 0.363);
+    box-shadow: 0px 5px 5px rgba(25, 26, 25, 0.39)
+    
+
+}
+
+
+#txtv{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(25, 26, 25, 0.39);
+    border: none;
+    color: rgb(18, 18, 19);
+    background: rgba(135, 193, 219, 0.507);
+    
+
+}
+#button:hover{
+    background:rgba(0, 212, 240, 0.712);
+    color: white;
+}
+#button2:hover{
+    background:rgba(0, 212, 240, 0.712);
+    color: white;
+}
+
+#limpar:hover{
+    background:rgba(0, 212, 240, 0.712);
+    color: white;
+}
+
+#txtv:hover{
+    background: white;
+    color: black;
+}
+
+select:hover{
+    background: white;
+    color: black;
+}
+
+select{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(25, 26, 25, 0.39);
+    color: rgb(18, 18, 19);
+    background: rgba(135, 193, 219, 0.507);
+    text-align: center;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

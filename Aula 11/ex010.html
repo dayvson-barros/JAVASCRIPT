@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de velocidade</title>
+    <style>
+        body {
+            font: normal 14pt optional;
+            position: relative;
+            background-color: white;
+            color: black;
+            width: 500px;
+            height: 500px;
+            min-height: 100px;
+            
+        }
+        h1 {
+            background: linear-gradient(180deg, rgb(248, 48, 0) , rgb(255, 255, 255));
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            min-height: 30px;
+        }
+        div {
+            background: linear-gradient(180deg, white 50%, rgb(245, 48, 0));
+            width: 500px;
+            height: 200px;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>RADAR DE VELOCIDADE</h1>
+    Digite a velocidade: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Km/h" onclick="cal()">
+    <div id="res" >
+
+    </div>
+
+    <script>
+
+        function cal(){
+            var txtve = window.document.querySelector('input#txtvel')
+            var resp = window.document.querySelector('div#res')
+            var vel = Number(txtve.value)
+            resp.innerHTML = `<p>Velocidade Registrada: <strong>${vel}Km/h</strong></p>`
+            if (vel>60){
+                resp.innerHTML += `<p>Você foi <strong>MULTADO</strong> por exceder o limite de velocidade.</p>`
+            }
+            resp.innerHTML += `<p>Dirija sempre com o cinto de segurança. </p>`
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Brasileiros</title>
+</head>
+<body>
+    <h1>EM QUE PAÍS VOCÊ VIVE?</h1>
+    <input type="text" id="txt" name="txt" />
+    <input type="button" value="Confirmar" id="conf" onclick="ck()"/>
+    <div id="res">
+
+    </div>
+
+    <script> 
+        var valor = window.document.getElementsByTagName('input')[0]
+        var resp = window.document.getElementById('res')   
+
+       
+                
+        
+
+
+        function ck() {
+            resp.innerHTML = `<p>País que você vive atualmente: <strong>${valor.value.toUpperCase()}</strong></p>`
+            if (valor.value.toUpperCase() == 'BRASIL'){
+                resp.innerHTML += `<p>Você é <strong>BRASILEIRO</strong></p>`
+            }else{
+                resp.innerHTML += `<p>Você é <strong>GRINGO</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
